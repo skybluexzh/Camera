@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CameraPreview" >
+
+    <RelativeLayout
+        android:id="@+id/preview_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	    <FrameLayout
+	        android:id="@+id/camera_preview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true" >
+	    </FrameLayout>
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/topper_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topper_plate" >
+
+        <ImageButton
+            android:id="@+id/switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/switch_camera" />
+
+        <ImageButton
+            android:id="@+id/button_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/flash_off" />
+	    
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/hidden_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="@android:color/transparent"  >
+	    <ImageView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+		</ImageView>
+	</RelativeLayout>
+	
+
+    <FrameLayout
+        android:id="@+id/bottome_plate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hidden_plate"
+        android:background="@drawable/bottom_plate" >
+        <ImageButton
+            android:id="@+id/button_shutter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/camera_shutter"/>
+    </FrameLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="66dp"
+    android:layout_height="66dp"
+    android:orientation="vertical"
+    android:padding="3dp" >
+    
+    <ImageView
+        android:id="@+id/filter_frame"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true" />
+  
+    <ImageButton
+        android:id="@+id/filter_thumbnail"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/filter_thumbnail" />
+  	
+  	<TextView
+  	    android:id="@+id/filter_name"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_centerHorizontal="true"
+  	    android:layout_marginTop="40dp"
+  	    android:textColor="#fff"
+  	    android:textSize="12sp" />
+  
+</RelativeLayout>
